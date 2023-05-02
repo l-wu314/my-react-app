@@ -1,7 +1,7 @@
 let accessToken;
 //const clientID = "4277843b9f8f4997b50ec10c668655e6";
 const clientID = "4277843b9f8f4997b50ec10c668655e6";
-const redirectURI = "http://localhost:3000/"
+const redirectURI = "https://sensational-biscochitos-25858b.netlify.app" //"http://localhost:3000/"
 export const Spotify =  {
     getAccessToken() {
         if (accessToken) {

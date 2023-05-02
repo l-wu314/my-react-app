@@ -66,7 +66,7 @@ export const Spotify =  {
                 }).then(responce => responce.json()
                 ).then(jsonResponce => {
                     const playlistID = jsonResponce.id;
-                    return fetch(`https://api.spotify.com/v1/users/{user_id}/playlists/${playlistID}/tracks`, {
+                    return fetch(`https://api.spotify.com/v1/users/${user_id}/playlists/${playlistID}/tracks`, {
                         headers: headers,
                         method: 'POST',
                         body: JSON.stringify({uris: trackURLs})
